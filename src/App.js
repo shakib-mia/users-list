@@ -9,7 +9,7 @@ function App() {
   const [id, getId] = useState(0);
 
   useEffect(() => {
-    fetch("https://602e7c2c4410730017c50b9d.mockapi.io/users")
+    fetch("Data.json")
       .then((response) => response.json())
       .then((data) => setUsers(data));
   }, []);
