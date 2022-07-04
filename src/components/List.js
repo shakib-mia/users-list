@@ -3,13 +3,6 @@ import React from "react";
 const List = ({ users, getId }) => {
   return (
     <div className="mx-3 mx-lg-0">
-      <h4
-        className="bg-primary py-3 my-2 rounded-top row justify-content-center text-uppercase"
-        style={{ "--bs-bg-opacity": 0.5 }}
-      >
-        Users List
-      </h4>
-
       <div>
         <ul className={users.length > 0 ? "list-unstyled" : "text-center"}>
           {users ? (

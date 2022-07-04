@@ -11,13 +11,6 @@ const Details = ({ id }) => {
 
   return (
     <div className="mx-3 " id="details">
-      <h4
-        className="bg-primary py-3 my-2 rounded-top row justify-content-center text-uppercase"
-        style={{ "--bs-bg-opacity": 0.5 }}
-      >
-        Users Details
-      </h4>
-
       {id === 0 ? (
         <h3 className="text-center">No user has been selected yet</h3>
       ) : (
