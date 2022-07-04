@@ -15,12 +15,12 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <div className="row mt-2 align-items-center">
-        <div className="col-6">
+    <div className="container my-3">
+      <div className="row">
+        <div className="col-12 col-lg-6">
           <List users={users} getId={getId}></List>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-lg-6">
           <Details id={id}></Details>
         </div>
       </div>
