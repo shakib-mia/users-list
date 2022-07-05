@@ -2,7 +2,6 @@ import React from "react";
 import ListItem from "./ListItem";
 
 const List = ({ users, getId }) => {
-  console.log(users[0]);
   const user = document.getElementsByClassName("list-item");
   const setId = (id) => {
     document.getElementById(`user${id}`).classList.add("active");
@@ -31,7 +30,12 @@ const List = ({ users, getId }) => {
         {users ? (
           users.length > 0 ? (
             users.map((single) => (
-              <ListItem user={single} setId={setId} getId={getId}></ListItem>
+              <ListItem
+                key={single.id}
+                user={single}
+                setId={setId}
+                getId={getId}
+              ></ListItem>
             ))
           ) : (
             <div className="spinner-border text-center col-12" role="status">
