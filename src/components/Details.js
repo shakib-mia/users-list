@@ -26,12 +26,13 @@ const Details = ({ id }) => {
         {id === 0 ? (
           <h3 className="text-center">No user has been selected yet</h3>
         ) : (
-          <div className="d-flex justify-content-center">
+          <div className="">
             {user.profile ? (
-              <div className="card col-10 border-0">
+              <div className="card border-0" style={{ width: "30rem" }}>
                 <img
-                  src="https://i.ibb.co/yhhStgK/avatar-1577909-960-720.webp"
+                  src={`https://randomuser.me/api/portraits/men/${id}.jpg`}
                   className="card-img-top w-25 mx-auto rounded-circle"
+                  width="20px"
                   alt={user.username}
                 />
                 <div className="card-body">
